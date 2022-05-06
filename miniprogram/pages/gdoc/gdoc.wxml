@@ -65,7 +65,9 @@
     <!-- 别人的共享 -->
     <view wx:else class="button text-cut" style="color:#bbb ;">来自{{docarr[moreIndex].creator_name}}的共享文档</view>
     <!-- 删除文档 -->
-    <view class="button text-red" bindtap="delete" data-id="{{docarr[moreIndex]._id}}">删除文档</view>
+    <view wx:if="{{docarr[moreIndex].creator==cdid}}"  class="button text-red" bindtap="delete" data-id="{{docarr[moreIndex]._id}}">删除文档</view>
+
+    <view wx:else class="button" style="color:#bbb ;">删除文档</view>
   </view>
 </view>
 

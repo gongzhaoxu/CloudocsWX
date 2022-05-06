@@ -115,7 +115,7 @@ Page({
       this.setData({
         moreShow: false,
       })
-      this.getdoc();
+      this.onShow();
     }).catch(err => {
       if (err != '取消') {
         console.error(err);
@@ -146,7 +146,7 @@ Page({
       this.setData({
         moreShow: false,
       })
-      this.getdoc();
+      this.onShow();
     }).catch(err => {
       if (err != '取消') {
         console.error(err);
