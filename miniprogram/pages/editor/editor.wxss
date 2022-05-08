@@ -1,6 +1,6 @@
 /* pages/editor/editor.wxss */
-@import "../common/lib/weui.wxss";
-@import "./assets/iconfont.wxss";
+@import "./weui.wxss";
+@import "./iconfont.wxss";
 
 .navigation {
   position: absolute;
